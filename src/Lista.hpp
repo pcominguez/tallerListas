@@ -20,8 +20,8 @@ template  <typename T>
 void Lista<T>::sacarFirst(){
     Nodo* n = _head;
     _head = _head->_next;
-    delete n;
     _length--;
+    delete n;
 }
 
 template <typename T>
