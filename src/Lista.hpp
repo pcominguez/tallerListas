@@ -1,9 +1,8 @@
 #include "Lista.h"
 
 template <typename T>
-Lista<T>::Lista() {
-    // Completar
-}
+Lista<T>::Lista()
+    :_length(0), _head(NULL), _tail(NULL){}
 
 template <typename T>
 Lista<T>::Lista(const Lista<T>& l) : Lista() {
@@ -13,7 +12,16 @@ Lista<T>::Lista(const Lista<T>& l) : Lista() {
 
 template <typename T>
 Lista<T>::~Lista() {
-    // Completar
+    while (_head!=NULL){
+        sacarFirst();
+    }
+}
+template  <typename T>
+void Lista<T>::sacarFirst(){
+    Nodo* n = _head;
+    _head = _head->_next;
+    delete n;
+    _length--;
 }
 
 template <typename T>

@@ -22,6 +22,8 @@ public:
      */
     Lista(const Lista& l);
 
+    void sacarFirst();
+
     /**
      * Destructor de la clase Lista.
      */
@@ -91,8 +93,14 @@ private:
 
     struct Nodo {
         // Completar
+        T _data;
+        Nodo* _next;
+        Nodo* _prev;
     };
 
+    Nodo* _head;
+    Nodo* _tail;
+    int _length;
     // Completar
 };
 
