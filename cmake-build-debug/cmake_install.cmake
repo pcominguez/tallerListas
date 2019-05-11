@@ -1,4 +1,4 @@
-# Install script for directory: /home/pablo/card/uba/algo2/labos/tallerListas
+# Install script for directory: /home/pablo/card/uba/algo2/labos/talleres/tallerListas
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pablo/card/uba/algo2/labos/tallerListas/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pablo/card/uba/algo2/labos/talleres/tallerListas/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

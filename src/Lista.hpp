@@ -26,18 +26,39 @@ void Lista<T>::sacarFirst(){
 
 template <typename T>
 Lista<T>& Lista<T>::operator=(const Lista<T>& aCopiar) {
-    // Completar
+    this->~Lista(); //fijarme si funciona.
+    (this->head)=(aCopiar.head);
+    (this->tail)=(aCopiar.tail);
+    (this->length)=(aCopiar.length);
     return *this;
 }
 
 template <typename T>
 void Lista<T>::agregarAdelante(const T& elem) {
-    // Completar
+    Nodo *nuevo = new Nodo(elem);
+    Nodo *segundo = _head;
+    nuevo->next = segundo;
+    _length++;
+    _head = nuevo;
+    if (segundo != NULL) {
+        segundo->prev = nuevo;
+    } else {
+        _tail = _head;
+    }
 }
 
 template <typename T>
 void Lista<T>::agregarAtras(const T& elem) {
-    // Completar
+    Nodo *nuevo = new Nodo(elem);
+    Nodo *anterior = _tail;
+    nuevo->prev = anterior;
+    _tail = nuevo;
+    _length++;
+    if (anterior != NULL) {
+        anterior->next = nuevo;
+    } else {
+        _head = _tail;
+    }
 }
 
 template <typename T>
@@ -47,14 +68,26 @@ void Lista<T>::eliminar(Nat i) {
 
 template <typename T>
 int Lista<T>::longitud() const {
-    // Completar
-    return -1;
+    int i = 0;
+    Nodo* n = _head;
+    while(n != NULL){
+        i++;
+        n = _head-> _next;
+    }
+    return i;
 }
 
 template <typename T>
 const T& Lista<T>::iesimo(Nat i) const {
-    // Completar
-    assert(false);
+    Nodo* actual = _head;
+    int i = 0;
+    while (i <= i && (actual != NULL){
+        if (p != i){
+            actual = actual -> _next;
+        }
+        i++;
+    }
+    return (*actual).data;
 }
 
 template <typename T>

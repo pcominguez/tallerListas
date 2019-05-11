@@ -43,10 +43,10 @@ RM = /home/pablo/card/Programs/clion-2019.1/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pablo/card/uba/algo2/labos/tallerListas
+CMAKE_SOURCE_DIR = /home/pablo/card/uba/algo2/labos/talleres/tallerListas
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pablo/card/uba/algo2/labos/tallerListas/cmake-build-debug
+CMAKE_BINARY_DIR = /home/pablo/card/uba/algo2/labos/talleres/tallerListas/cmake-build-debug
 
 # Utility rule file for correrValgrind.
 
@@ -71,6 +71,6 @@ CMakeFiles/correrValgrind.dir/clean:
 .PHONY : CMakeFiles/correrValgrind.dir/clean
 
 CMakeFiles/correrValgrind.dir/depend:
-	cd /home/pablo/card/uba/algo2/labos/tallerListas/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pablo/card/uba/algo2/labos/tallerListas /home/pablo/card/uba/algo2/labos/tallerListas /home/pablo/card/uba/algo2/labos/tallerListas/cmake-build-debug /home/pablo/card/uba/algo2/labos/tallerListas/cmake-build-debug /home/pablo/card/uba/algo2/labos/tallerListas/cmake-build-debug/CMakeFiles/correrValgrind.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pablo/card/uba/algo2/labos/talleres/tallerListas/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pablo/card/uba/algo2/labos/talleres/tallerListas /home/pablo/card/uba/algo2/labos/talleres/tallerListas /home/pablo/card/uba/algo2/labos/talleres/tallerListas/cmake-build-debug /home/pablo/card/uba/algo2/labos/talleres/tallerListas/cmake-build-debug /home/pablo/card/uba/algo2/labos/talleres/tallerListas/cmake-build-debug/CMakeFiles/correrValgrind.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/correrValgrind.dir/depend
 
