@@ -79,21 +79,28 @@ int Lista<T>::longitud() const {
 
 template <typename T>
 const T& Lista<T>::iesimo(Nat i) const {
-    Nodo* actual = _head;
-    int i = 0;
-    while (i <= i && (actual != NULL){
-        if (p != i){
-            actual = actual -> _next;
+    Nodo* n = _head;
+    int j = 0;
+    while (j <= i && (n != NULL){
+        if (j != i){
+            n = n -> _next;
         }
-        i++;
+        j++;
     }
-    return (*actual).data;
+    return n -> data;
 }
 
 template <typename T>
 T& Lista<T>::iesimo(Nat i) {
-    // Completar (hint: es igual a la anterior...)
-    assert(false);
+    Nodo* n = _head;
+    int j = 0;
+    while (j <= i && (n != NULL){
+        if (j != i){
+            n = n -> _next;
+        }
+        j++;
+    }
+    return n -> data;
 }
 
 template <typename T>
