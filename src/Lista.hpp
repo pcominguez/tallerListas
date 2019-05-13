@@ -35,13 +35,13 @@ Lista<T>& Lista<T>::operator=(const Lista<T>& aCopiar) {
 
 template <typename T>
 void Lista<T>::agregarAdelante(const T& elem) {
-    Nodo *nuevo = new Nodo(elem);
-    Nodo *segundo = _head;
-    nuevo->next = segundo;
+    Nodo *n = new Nodo(elem);
+    Nodo *primero = _head;
+    n->next = primero;
     _length++;
-    _head = nuevo;
-    if (segundo != NULL) {
-        segundo->prev = nuevo;
+    _head = n;
+    if (primero != NULL) {
+        primero->prev = n;
     } else {
         _tail = _head;
     }
@@ -49,13 +49,13 @@ void Lista<T>::agregarAdelante(const T& elem) {
 
 template <typename T>
 void Lista<T>::agregarAtras(const T& elem) {
-    Nodo *nuevo = new Nodo(elem);
-    Nodo *anterior = _tail;
-    nuevo->prev = anterior;
-    _tail = nuevo;
+    Nodo *n = new Nodo(elem);
+    Nodo *ultimo = _tail;
+    n->prev = ultimo;
+    _tail = n;
     _length++;
-    if (anterior != NULL) {
-        anterior->next = nuevo;
+    if (ultimo != NULL) {
+        ultimo->next = n;
     } else {
         _head = _tail;
     }
