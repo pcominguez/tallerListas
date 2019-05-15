@@ -92,10 +92,11 @@ public:
 private:
 
     struct Nodo {
-        // Completar
-        T _data;
+        Nodo(const T& elem);
+        Nodo(Nodo& n);
         Nodo* _next;
         Nodo* _prev;
+        T _data;
     };
 
     Nodo* _head;

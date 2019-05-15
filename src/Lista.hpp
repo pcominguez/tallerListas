@@ -16,6 +16,14 @@ Lista<T>::~Lista() {
         sacarFirst();
     }
 }
+
+template<class T>
+Lista<T>::Nodo::Nodo(const T& elem) : _data(elem), _prev(NULL), _next(NULL){};
+
+template<class T>
+Lista<T>::Nodo::Nodo(Nodo& n) : _data(n._data), _prev(n._prev), _next(n._next){};
+
+
 template  <typename T>
 void Lista<T>::sacarFirst(){
     Nodo* n = _head;
@@ -26,22 +34,30 @@ void Lista<T>::sacarFirst(){
 
 template <typename T>
 Lista<T>& Lista<T>::operator=(const Lista<T>& aCopiar) {
-    this->~Lista(); //fijarme si funciona.
-    (this->head)=(aCopiar.head);
-    (this->tail)=(aCopiar.tail);
-    (this->length)=(aCopiar.length);
+    this->~Lista();
+    (this->_head) = aCopiar._head;
+    Nodo* iterar = (aCopiar._head);
+    int i=0;
+    while (i < (aCopiar._length)) {
+        (*this).agregarAtras(iterar->_data);
+        iterar = (iterar)->_next;
+        i++;
+    }
+    int nuevalength = (aCopiar._length);
+    (this->_length) = nuevalength;
     return *this;
 }
+
 
 template <typename T>
 void Lista<T>::agregarAdelante(const T& elem) {
     Nodo *n = new Nodo(elem);
     Nodo *primero = _head;
-    n->next = primero;
+    n->_next = primero;
     _length++;
     _head = n;
     if (primero != NULL) {
-        primero->prev = n;
+        primero-> _prev = n;
     } else {
         _tail = _head;
     }
@@ -50,20 +66,38 @@ void Lista<T>::agregarAdelante(const T& elem) {
 template <typename T>
 void Lista<T>::agregarAtras(const T& elem) {
     Nodo *n = new Nodo(elem);
-    Nodo *ultimo = _tail;
-    n->prev = ultimo;
-    _tail = n;
+    Nodo *primero = _head;
+    n->_next = primero;
     _length++;
-    if (ultimo != NULL) {
-        ultimo->next = n;
+    _head = n;
+    if (primero != NULL) {
+        primero-> _prev = n;
     } else {
-        _head = _tail;
+        _tail = _head;
     }
 }
 
 template <typename T>
 void Lista<T>::eliminar(Nat i) {
-    // Completar
+    Nodo *n = _head;
+    if (i == 0){
+        sacarFirst();
+    } else {
+        for (int p = 0; p <= i && (n != NULL); p++) {
+            if (p != i) {
+                n = n-> _next;
+            } else {
+                if (n->_prev != NULL) {
+                    (n->_prev)->_next = n-> _next;
+                }
+                if (n->_next != NULL) {
+                    (n->_next)-> _prev = n-> _prev;
+                }
+                delete (n);
+            }
+        }
+        _length--;
+    }
 }
 
 template <typename T>
@@ -81,7 +115,7 @@ template <typename T>
 const T& Lista<T>::iesimo(Nat i) const {
     Nodo* n = _head;
     int j = 0;
-    while (j <= i && (n != NULL){
+    while (j <= i && (n != NULL)){
         if (j != i){
             n = n -> _next;
         }
@@ -94,13 +128,13 @@ template <typename T>
 T& Lista<T>::iesimo(Nat i) {
     Nodo* n = _head;
     int j = 0;
-    while (j <= i && (n != NULL){
+    while (j <= i && (n != NULL)){
         if (j != i){
             n = n -> _next;
         }
         j++;
     }
-    return n -> data;
+    return n -> _data;
 }
 
 template <typename T>

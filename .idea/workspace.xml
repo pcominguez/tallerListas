@@ -16,6 +16,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5cda06de-ff35-4fe9-a6cf-3c89c2428d4c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lista.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lista.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lista.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lista.hpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -34,8 +35,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lista.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-135">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            <state relative-caret-position="226">
+              <caret line="95" column="8" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
+              <folding>
+                <element signature="e#53#70#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,11 +47,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Lista.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="82" column="14" lean-forward="true" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+            <state relative-caret-position="191">
+              <caret line="121" column="12" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
               <folding>
                 <element signature="e#29#41#0" expanded="true" />
+                <element signature="e#411#420#0" expanded="true" />
+                <element signature="e#509#518#0" expanded="true" />
                 <element signature="e#412#424#0" expanded="true" />
+                <element signature="e#542#554#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,8 +74,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="683" />
-    <option name="width" value="676" />
+    <option name="x" value="-1" />
+    <option name="width" value="684" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectView">
@@ -139,7 +146,8 @@
       <workItem from="1557098073739" duration="2089000" />
       <workItem from="1557412872544" duration="43000" />
       <workItem from="1557547012172" duration="2125000" />
-      <workItem from="1557701679242" duration="1069000" />
+      <workItem from="1557701679242" duration="1225000" />
+      <workItem from="1557889103654" duration="5877000" />
     </task>
     <task id="LOCAL-00001" summary="empezando el taller">
       <created>1557110208723</created>
@@ -169,11 +177,23 @@
       <option name="project" value="LOCAL" />
       <updated>1557548538486</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="revisar eliminar">
+      <created>1557719087001</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557719087002</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="correrTests - 2019.05.15 at 19h 04m 36s.xml">
+      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5326000" />
+    <option name="totallyTimeSpent" value="11359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="728" extended-state="6" />
@@ -184,13 +204,13 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289256" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.3289256" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3289256" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3289256" />
@@ -208,23 +228,30 @@
     <MESSAGE value="empezando el taller" />
     <MESSAGE value="revisar i esimo" />
     <MESSAGE value="revisar i esimo y eliminar" />
-    <option name="LAST_COMMIT_MESSAGE" value="revisar i esimo y eliminar" />
+    <MESSAGE value="revisar eliminar" />
+    <option name="LAST_COMMIT_MESSAGE" value="revisar eliminar" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Lista.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        <state relative-caret-position="226">
+          <caret line="95" column="8" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
+          <folding>
+            <element signature="e#53#70#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lista.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="82" column="14" lean-forward="true" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+        <state relative-caret-position="191">
+          <caret line="121" column="12" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
           <folding>
             <element signature="e#29#41#0" expanded="true" />
+            <element signature="e#411#420#0" expanded="true" />
+            <element signature="e#509#518#0" expanded="true" />
             <element signature="e#412#424#0" expanded="true" />
+            <element signature="e#542#554#0" expanded="true" />
           </folding>
         </state>
       </provider>
